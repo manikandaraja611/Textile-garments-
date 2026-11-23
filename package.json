@@ -1,0 +1,9 @@
+{
+  "name": "tana-textile-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small-batch textile garment storefront — catalogue, filters, quick view, bag and demo checkout.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

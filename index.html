@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tana Textile Studio — Handwoven garments, made slowly</title>
+<meta name="description" content="Small-batch garments cut from handwoven cotton, linen and merino. Natural dyes, fair wages, repair for life.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23171512'/%3E%3Cpath d='M6 8h20M6 14h20M6 20h20M6 26h20' stroke='%23F3EEE4' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#shop">Skip to the collection</a>
+
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="#" aria-label="Tana Textile Studio, home">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 5h18M3 10h18M3 15h18M3 20h18" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <span class="brand-word">TANA</span>
+      <span class="brand-sub">Textile studio</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#shop">Shop</a>
+      <a href="#fabrics">Fabrics</a>
+      <a href="#craft">Our craft</a>
+      <a href="#journal">Journal</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="nav-search" aria-label="Search the collection">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      <button class="bag-btn" id="open-cart">
+        <span>Bag</span>
+        <span class="bag-count" id="bag-count">0</span>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#shop">Shop</a>
+      <a href="#fabrics">Fabrics</a>
+      <a href="#craft">Our craft</a>
+      <a href="#journal">Journal</a>
+    </nav>
+    <p class="mobile-menu-note">Handwoven cotton · natural dye · small batch</p>
+  </div>
+</header>
+
+<main>
+  <!-- ───────────────────────── Hero ───────────────────────── -->
+  <section class="hero">
+    <div class="shell hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">SS26 · Handwoven garments</p>
+        <h1 class="reveal">Cloth that <em>remembers</em> the hand that made it.</h1>
+        <p class="lede reveal">Garments cut from handwoven cotton, linen and merino — dyed with earth pigments, sewn in limited runs by twelve partner workshops.</p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-solid" href="#shop">Shop the collection</a>
+          <a class="btn btn-text" href="#craft">Read our craft <span aria-hidden="true">→</span></a>
+        </div>
+        <dl class="hero-stats reveal">
+          <div><dt>Fibres</dt><dd>100% natural</dd></div>
+          <div><dt>Weavers</dt><dd>240 partners</dd></div>
+          <div><dt>Runs</dt><dd>Small batch</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="hero-frame">
+          <svg viewBox="0 0 620 740" role="img" aria-label="Woven bands of terracotta, indigo, sand and olive cloth" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <pattern id="heroWeave" width="9" height="9" patternUnits="userSpaceOnUse">
+                <path d="M0 0V9M4.5 0V9" stroke="#1b1712" stroke-opacity=".10" stroke-width="1"/>
+                <path d="M0 0H9M0 4.5H9" stroke="#fff" stroke-opacity=".12" stroke-width="1"/>
+              </pattern>
+              <linearGradient id="heroShade" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fff" stop-opacity=".16"/>
+                <stop offset=".45" stop-color="#fff" stop-opacity="0"/>
+                <stop offset="1" stop-color="#000" stop-opacity=".16"/>
+              </linearGradient>
+              <filter id="heroGrain">
+                <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+                <feColorMatrix type="saturate" values="0"/>
+                <feComponentTransfer><feFuncA type="linear" slope=".09"/></feComponentTransfer>
+              </filter>
+            </defs>
+
+            <rect width="620" height="740" fill="#E7DCC9"/>
+            <g>
+              <rect x="0" y="90" width="620" height="128" fill="#B4552D"/>
+              <rect x="0" y="218" width="620" height="96" fill="#2F4858"/>
+              <rect x="0" y="314" width="620" height="158" fill="#D8C4A2"/>
+              <rect x="0" y="472" width="620" height="74" fill="#5E6242"/>
+              <rect x="0" y="546" width="620" height="194" fill="#EFE6D6"/>
+            </g>
+            <g opacity=".9">
+              <rect x="0" y="90" width="620" height="650" fill="url(#heroWeave)"/>
+              <rect x="0" y="90" width="620" height="650" fill="url(#heroShade)"/>
+              <rect x="0" y="90" width="620" height="650" fill="#B08A5E" filter="url(#heroGrain)" opacity=".7"/>
+            </g>
+
+            <circle cx="446" cy="188" r="74" fill="#F3EEE4" opacity=".92"/>
+            <circle cx="446" cy="188" r="74" fill="none" stroke="#1b1712" stroke-opacity=".18"/>
+
+            <g font-family="Fraunces, Georgia, serif" fill="#1b1712">
+              <text x="96" y="180" font-size="30" letter-spacing="7" fill="#F3EEE4" opacity=".9">SS/26</text>
+              <text x="48" y="414" font-size="58" letter-spacing="2">Plain weave</text>
+              <text x="48" y="452" font-size="15" letter-spacing="5" opacity=".7">120 GSM · UNDYED WARP</text>
+              <text x="48" y="592" font-size="15" letter-spacing="5" opacity=".65">SLOW MADE · TANA STUDIO</text>
+            </g>
+
+            <g stroke="#1b1712" stroke-opacity=".35" stroke-dasharray="5 7" stroke-width="1.4">
+              <path d="M48 670h524"/>
+            </g>
+            <g stroke="#F3EEE4" stroke-opacity=".45" stroke-width="1">
+              <path d="M48 100v620M96 100v620M144 100v620M192 100v620M240 100v620M288 100v620M336 100v620M384 100v620M432 100v620M480 100v620M528 100v620M576 100v620"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="hero-chip">
+          <span class="hero-dot" aria-hidden="true"></span>
+          <div>
+            <strong>Handwoven in Kerala</strong>
+            <span>Plain weave · 120 GSM</span>
+          </div>
+        </div>
+
+        <div class="hero-badge" aria-hidden="true">
+          <svg class="spin" viewBox="0 0 120 120">
+            <defs><path id="badgeCircle" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+            <text font-size="8.6" letter-spacing="3" fill="currentColor">
+              <textPath href="#badgeCircle">HANDWOVEN · NATURAL DYE · SMALL BATCH · </textPath>
+            </text>
+          </svg>
+          <span>✳</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Marquee ───────────────────────── -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Handwoven cotton</span><i>✳</i><span>Natural indigo</span><i>✳</i><span>Small batch</span><i>✳</i><span>Repair for life</span><i>✳</i><span>Plastic-free</span><i>✳</i><span>Fair wages</span><i>✳</i>
+      <span>Handwoven cotton</span><i>✳</i><span>Natural indigo</span><i>✳</i><span>Small batch</span><i>✳</i><span>Repair for life</span><i>✳</i><span>Plastic-free</span><i>✳</i><span>Fair wages</span><i>✳</i>
+    </div>
+  </div>
+
+  <!-- ───────────────────────── Shop ───────────────────────── -->
+  <section class="section shop" id="shop">
+    <div class="shell">
+      <div class="shop-head">
+        <div>
+          <p class="eyebrow">The collection</p>
+          <h2>Ten pieces, four cloths</h2>
+        </div>
+        <div class="shop-tools">
+          <label class="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <input id="search" type="search" placeholder="Search cloth or piece" aria-label="Search products" autocomplete="off">
+          </label>
+          <label class="sort">
+            <span>Sort</span>
+            <select id="sort">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price · low to high</option>
+              <option value="price-desc">Price · high to low</option>
+              <option value="name">Name · A–Z</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+
+      <p class="results" id="results" aria-live="polite"></p>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>
+        <p class="empty-mark">✳</p>
+        <h3>Nothing on the loom for that search.</h3>
+        <p>Try a fabric like “linen”, or clear your filters to see all ten pieces.</p>
+        <button class="btn btn-outline" id="clear-filters">Clear filters</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Craft ───────────────────────── -->
+  <section class="section craft" id="craft">
+    <div class="shell craft-grid">
+      <div class="craft-copy reveal">
+        <p class="eyebrow">Our craft</p>
+        <h2 class="craft-quote">“We don’t chase seasons. We chase the perfect plain weave.”</h2>
+        <p>Every Tana garment begins on a pit loom in Kerala or a rain-fed flax field in Flanders. We buy whole cloth, not trend forecasts — then cut it into the few shapes we believe in: a tee that holds its neckline, a trouser that pleats once and falls clean, a jacket that softens with every year.</p>
+        <p>Run sizes stay between 120 and 400 pieces. When a cloth is gone, we wait for the next harvest.</p>
+        <a class="btn btn-text" href="#journal">Read the studio notes <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="craft-visual reveal" aria-hidden="true">
+        <div class="loom-card">
+          <svg viewBox="0 0 480 420">
+            <defs>
+              <pattern id="loomLines" width="10" height="10" patternUnits="userSpaceOnUse">
+                <path d="M0 0V10" stroke="#F3EEE4" stroke-opacity=".16"/>
+                <path d="M0 0H10" stroke="#F3EEE4" stroke-opacity=".10"/>
+              </pattern>
+            </defs>
+            <rect width="480" height="420" fill="#2F4858"/>
+            <rect width="480" height="420" fill="url(#loomLines)"/>
+            <g stroke="#F3EEE4" stroke-opacity=".5" stroke-width="2">
+              <path d="M40 40v340M80 40v340M120 40v340M160 40v340M200 40v340M240 40v340M280 40v340M320 40v340M360 40v340M400 40v340M440 40v340"/>
+            </g>
+            <g fill="#B4552D">
+              <rect x="30" y="86" width="420" height="26" rx="2"/>
+              <rect x="30" y="150" width="420" height="18" rx="2" fill="#D8C4A2"/>
+              <rect x="30" y="214" width="420" height="30" rx="2"/>
+              <rect x="30" y="286" width="420" height="16" rx="2" fill="#5E6242"/>
+              <rect x="30" y="330" width="420" height="22" rx="2" fill="#D8C4A2"/>
+            </g>
+            <g fill="#F3EEE4">
+              <circle cx="240" cy="200" r="46" opacity=".92"/>
+              <path d="M222 200h36M240 182v36" stroke="#2F4858" stroke-width="2"/>
+            </g>
+            <text x="30" y="402" font-family="Inter, sans-serif" font-size="11" letter-spacing="4" fill="#F3EEE4" opacity=".7">WARP 240 · WEFT 12/CM</text>
+          </svg>
+        </div>
+        <div class="craft-stamps">
+          <span>Est. 2016</span>
+          <span>Azo-free dye</span>
+          <span>Repairs, free</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="shell stats reveal">
+      <div><strong>12</strong><span>partner workshops</span></div>
+      <div><strong>240</strong><span>handloom weavers</span></div>
+      <div><strong>0</strong><span>synthetic fibres</span></div>
+      <div><strong>30 yr</strong><span>expected wear</span></div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Fabrics ───────────────────────── -->
+  <section class="section fabrics" id="fabrics">
+    <div class="shell">
+      <div class="fabrics-head reveal">
+        <div>
+          <p class="eyebrow">The cloth library</p>
+          <h2>Four fibres, nothing hidden</h2>
+        </div>
+        <p class="fabrics-note">Every label lists the mill, the weave and the dye. If we can’t trace it, we don’t cut it.</p>
+      </div>
+
+      <div class="fabric-grid">
+        <article class="fabric reveal">
+          <div class="swatch khadi" aria-hidden="true"></div>
+          <h3>Khadi cotton</h3>
+          <p class="mono">Handspun · handwoven · Kerala</p>
+          <p>Slubby, breathable, stronger when washed. Our oldest cloth and still the one we reach for first.</p>
+        </article>
+        <article class="fabric reveal">
+          <div class="swatch linen" aria-hidden="true"></div>
+          <h3>Belgian linen</h3>
+          <p class="mono">Rain-fed flax · Flanders</p>
+          <p>Grown without irrigation, retted in the field, woven loose enough to move air. Creases are part of the deal.</p>
+        </article>
+        <article class="fabric reveal">
+          <div class="swatch merino" aria-hidden="true"></div>
+          <h3>Merino jersey</h3>
+          <p class="mono">RWS certified · non-mulesed</p>
+          <p>Fine-gauge, 18.5 micron, knitted in Portugal. Warm without bulk, and it genuinely resists odour.</p>
+        </article>
+        <article class="fabric reveal">
+          <div class="swatch silk" aria-hidden="true"></div>
+          <h3>Peace silk noil</h3>
+          <p class="mono">Ahimsa · Karnataka</p>
+          <p>Spun from the short fibres left after reeling, so nothing is wasted. Dry, matte and softly irregular.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Journal ───────────────────────── -->
+  <section class="section journal" id="journal">
+    <div class="shell">
+      <div class="journal-head">
+        <div>
+          <p class="eyebrow">Journal</p>
+          <h2>Notes from the loom</h2>
+        </div>
+        <a class="btn btn-text" href="#journal">All notes <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="journal-grid">
+        <a class="post reveal" href="#journal">
+          <div class="post-art art-a" aria-hidden="true"><span>01</span></div>
+          <p class="mono">Cloth · 6 min</p>
+          <h3>Why slub is a signature, not a flaw</h3>
+          <p>On handspun yarn, the thick-and-thin line is the fingerprint of the spinner. Here’s how to read it.</p>
+        </a>
+        <a class="post reveal" href="#journal">
+          <div class="post-art art-b" aria-hidden="true"><span>02</span></div>
+          <p class="mono">Dye · 9 min</p>
+          <h3>Indigo: a fermentation diary</h3>
+          <p>Twelve days, three vats, one shade that refuses to be hurried. Notes from our dye house in Alappuzha.</p>
+        </a>
+        <a class="post reveal" href="#journal">
+          <div class="post-art art-c" aria-hidden="true"><span>03</span></div>
+          <p class="mono">Wardrobe · 4 min</p>
+          <h3>The case for three pairs of trousers</h3>
+          <p>Fewer, better, repaired. A small argument for wearing the same good thing until it knows you.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Newsletter ───────────────────────── -->
+  <section class="section newsletter-section">
+    <div class="shell">
+      <div class="newsletter reveal">
+        <div>
+          <p class="eyebrow light">Notes from the loom</p>
+          <h2>A letter, once a month.</h2>
+          <p>New cloth, restock dates, dye experiments and the occasional factory dog. No noise, no discount blasts.</p>
+        </div>
+        <form class="newsletter-form" id="newsletter-form" novalidate>
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input id="newsletter-email" type="email" name="email" placeholder="you@example.com" required>
+          <button class="btn btn-light" type="submit">Subscribe</button>
+          <p class="form-note" id="newsletter-note" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand-footer" href="#">
+        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18M3 10h18M3 15h18M3 20h18" stroke="currentColor" stroke-width="2"/></svg>
+        <span class="brand-word">TANA</span>
+      </a>
+      <p>Handwoven garments, cut in small batches in Kerala and Lisbon. Made to be mended, not replaced.</p>
+    </div>
+    <div>
+      <h3>Shop</h3>
+      <ul><li><a href="#shop">All pieces</a></li><li><a href="#shop">Tops &amp; shirts</a></li><li><a href="#shop">Bottoms</a></li><li><a href="#shop">Accessories</a></li></ul>
+    </div>
+    <div>
+      <h3>Studio</h3>
+      <ul><li><a href="#craft">Our craft</a></li><li><a href="#fabrics">Cloth library</a></li><li><a href="#journal">Journal</a></li><li><a href="#craft">Repairs</a></li></ul>
+    </div>
+    <div>
+      <h3>Help</h3>
+      <ul><li><a href="#">Sizing</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">Contact</a></li></ul>
+    </div>
+  </div>
+  <div class="shell footer-bottom">
+    <p>© 2026 Tana Textile Studio</p>
+    <p class="mono">Made slowly, in small batches.</p>
+    <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<!-- ───────────────────────── Cart drawer ───────────────────────── -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="cart" role="dialog" aria-modal="true" aria-label="Shopping bag" aria-hidden="true">
+  <header class="drawer-head">
+    <h2>Your bag <span class="drawer-count" id="drawer-count">0</span></h2>
+    <button class="icon-btn" id="cart-close" aria-label="Close bag">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </header>
+  <div class="drawer-body" id="cart-body"></div>
+  <div class="drawer-foot" id="cart-foot"></div>
+</aside>
+
+<!-- ───────────────────────── Quick view ───────────────────────── -->
+<dialog class="pdp" id="pdp" aria-label="Product details">
+  <button class="icon-btn pdp-close" id="pdp-close" aria-label="Close product details">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+  </button>
+  <div id="pdp-content"></div>
+</dialog>
+
+<div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+
+<noscript>
+  <p style="padding:24px;text-align:center">This shop needs JavaScript for the bag and filters. Please enable it to explore the collection.</p>
+</noscript>
+
+<script src="app.js"></script>
+</body>
+</html>
